@@ -40,6 +40,7 @@ class ConverterTestTest {
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
+
     @Test
     void whenConvertNegativeRblToDollarThenZeroDollar() {
         float in = -50;
