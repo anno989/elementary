@@ -2,10 +2,16 @@ package ru.converter;
 
 public class Converter {
     public static float rubleToEuro(float value) {
+        if (value <= 0) {
+            return 0;
+        }
         return value / 100;
     }
 
     public static float rubleToDollar(float value) {
+        if (value <= 0) {
+            return 0;
+        }
         return value / 90;
     }
 
