@@ -13,7 +13,7 @@ public class MathCalculator {
     }
 
     public static double sumAndMultiplyAndDifferenceAndDivision(double first, double second) {
-        return  ru.math.MathFunction.sum(first, second)
+        return  sum(first, second)
                 + multiply(first, second)
                 + difference(first, second)
                 + division(first, second);
