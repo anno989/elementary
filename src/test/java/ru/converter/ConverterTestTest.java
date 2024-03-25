@@ -1,7 +1,7 @@
 package ru.converter;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.*;
 
 class ConverterTestTest {
 
@@ -11,7 +11,7 @@ class ConverterTestTest {
         float expected = 1.4f;
         float out = Converter.rubleToEuro(in);
         float eps = 0.0001f;
-        assertEquals(expected, out, eps);
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
     @Test
@@ -20,15 +20,16 @@ class ConverterTestTest {
         float expected = 1.5555f;
         float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
-        assertEquals(expected, out, eps);
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
     @Test
     void whenConvertZeroRblToEuroThenZeroEuro() {
         float in = 0;
-        float expected = 0;
-        float result = Converter.rubleToEuro(in);
-        assertEquals(expected, result);
+        float eps = 0;
+        float expected = Converter.rubleToEuro(in);
+        float out = 0;
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
     @Test
@@ -37,7 +38,7 @@ class ConverterTestTest {
         float expected = 1.1111F;
         float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
-        assertEquals(expected, out, eps);
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
     @Test
@@ -45,7 +46,8 @@ class ConverterTestTest {
         float in = -50;
         float expected = 0;
         float out = Converter.rubleToDollar(in);
-        assertEquals(expected, out);
+        float eps = 0.0F;
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 }
 
