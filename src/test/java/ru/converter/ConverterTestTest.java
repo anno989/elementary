@@ -43,7 +43,7 @@ class ConverterTestTest {
 
     @Test
     void whenConvertNegativeRblToDollarThenZeroDollar() {
-        float in = -50;
+        float in = -70;
         float expected = 0;
         float out = Converter.rubleToDollar(in);
         float eps = 0.0F;
