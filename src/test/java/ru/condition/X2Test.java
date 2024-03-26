@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class X2Test {
     @Test
-    void whenA11B11C11X11Then3() {
+    void whenA1B1C1X1Then3() {
         int a = 1;
         int b = 1;
         int c = 1;
@@ -16,7 +16,7 @@ class X2Test {
     }
 
     @Test
-    void whenA20B21C21X21Then2() {
+    void whenA0B1C1X1Then2() {
         int a = 0;
         int b = 1;
         int c = 1;
@@ -28,7 +28,7 @@ class X2Test {
     }
 
     @Test
-    void whenA31B31C30X31Then2() {
+    void whenA1B1C0X1Then2() {
         int a = 1;
         int b = 1;
         int c = 0;
@@ -39,7 +39,7 @@ class X2Test {
     }
 
     @Test
-    void whenA41B41C41X40Then1() {
+    void whenA1B1C1X0Then1() {
         int a = 1;
         int b = 1;
         int c = 1;
