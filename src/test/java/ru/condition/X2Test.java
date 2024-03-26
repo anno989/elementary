@@ -4,7 +4,6 @@ import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class X2Test {
-
     @Test
     void whenA11B11C11X11Then3() {
         int a1 = 1;
