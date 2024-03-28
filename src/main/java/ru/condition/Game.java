@@ -12,9 +12,6 @@ public class Game {
             if ("tetris".equals(name)) {
                 System.out.println("Start - tetris");
             }
-            if ("tetris".equals(name)) {
-                System.out.println("Start - contra");
-            }
         }
 
         public static void main(String[] args) {
