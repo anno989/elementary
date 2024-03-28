@@ -18,9 +18,3 @@ public class AlertDivByZero {
         AlertDivByZero.possibleDiv(-4);
     }
 }
-
-
-
-
-
-
