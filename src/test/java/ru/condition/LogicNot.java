@@ -35,7 +35,3 @@ public class LogicNot {
         System.out.println("Is " + number + " even or not positive? " + LogicNot.evenOrNotPositive(number));
     }
 }
-
-
-
-
