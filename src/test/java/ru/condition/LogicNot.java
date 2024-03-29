@@ -1,6 +1,7 @@
 package ru.condition;
 
 public class LogicNot {
+
         public static boolean isEven(int num) {
             return num % 2 == 0;
         }
