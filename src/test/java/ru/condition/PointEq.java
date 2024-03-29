@@ -10,5 +10,3 @@ public class PointEq {
         System.out.println(eq(10, 10, 10, 10));
     }
 }
-
-
