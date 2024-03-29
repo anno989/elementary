@@ -27,7 +27,6 @@ public class LogicNot {
 
         public static void main(String[] args) {
         int number = 5;
-
         System.out.println("Is " + number + " even? " + LogicNot.isEven(number));
         System.out.println("Is " + number + " positive? " + LogicNot.isPositive(number));
         System.out.println("Is " + number + " not even? " + LogicNot.notEven(number));
