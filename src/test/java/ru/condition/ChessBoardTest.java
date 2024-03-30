@@ -3,7 +3,6 @@ package ru.condition;
 import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 public class ChessBoardTest {
     @Test
     public void wayIs5() {
